@@ -10,4 +10,6 @@ This is my submission for the SLAM project in MRE 462, taught by Mingshao Zhang.
 
   It then begins a section that tries to recognize where it is in the space and adjusts some aspects of it as needed such as the depth, pose, and points measured. After this, it starts plotting its estimated position, orientation, and key points on a 3D graph. It then captures each view it has and makes its way into the "Main Loop".
 
-  
+  The main loop is rather dense, but it mainly does the mapping portion of SLAM. After this, it tries to optimize the values and poses found and compares it with ground truth. Finally, it ends by defining functions that are not included in any of the toolboxes used for this.
+
+  The code used in this example does almost everything, but it cannot generate a dataset. To accomplis this, I would take a video of the scene and separate it into its individual frames to be used as a dataset. Having this file already in my possession, I wouldn't have to download it each time. 
